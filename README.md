@@ -1,6 +1,6 @@
 # ⚡ Testing-Guide-Part-2 (Database Testing)
 
-This project demonstrates the fundamentals of **Database Testing in Laravel 10** using **Factories, Seeders, Refresh Database, Transactions, and Database Assertions**.
+This project demonstrates the fundamentals of **Database Testing in Laravel** using **Factories, Seeders, Refresh Database, Transactions, and Database Assertions**.
 
 Database testing ensures that application data is created, stored, updated, and deleted correctly. Laravel provides built-in testing tools to generate fake data, reset databases, and verify database operations automatically.
 
