@@ -1,4 +1,4 @@
-# ⚡ Testing-Guide-Part-2 (Database Testing)
+# ⚡ Testing-Guide-Part-3 (Database Testing)
 
 This project demonstrates the fundamentals of **Database Testing in Laravel** using **Factories, Seeders, Refresh Database, Transactions, and Database Assertions**.
 
