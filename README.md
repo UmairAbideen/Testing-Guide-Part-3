@@ -346,100 +346,6 @@ class UserTest extends TestCase
 
 }
 ```
-
----
-
-# 5️⃣ Database Assertions
-
-Assertions verify database results.
-
----
-
-## Check Record Exists
-
-```php
-$this->assertDatabaseHas('users',[
-
-    'email'=>'test@test.com'
-
-]);
-```
-
----
-
-## Check Record Missing
-
-```php
-$this->assertDatabaseMissing('users',[
-
-    'email'=>'deleted@test.com'
-
-]);
-```
-
----
-
-## Check Record Count
-
-```php
-$this->assertDatabaseCount(
-    'users',
-    10
-);
-```
-
----
-
-# 🔥 Real World Example
-
-## User Registration Testing
-
-Application Flow:
-
-```
-User Opens Register Page
-          │
-          ▼
-Submit Registration Form
-          │
-          ▼
-Create User
-          │
-          ▼
-Save Data
-          │
-          ▼
-Verify Database
-```
-
-Test:
-
-```php
-public function test_user_registration()
-{
-
-    $response = $this->post('/register',[
-
-        'name'=>'John',
-
-        'email'=>'john@test.com',
-
-        'password'=>'password',
-
-        'password_confirmation'=>'password'
-
-    ]);
-
-
-    $this->assertDatabaseHas('users',[
-
-        'email'=>'john@test.com'
-
-    ]);
-
-}
-```
-
 ---
 
 # ⚖️ Database Testing Technique Comparison
@@ -450,5 +356,4 @@ public function test_user_registration()
 | Seeders | Insert predefined data | Development and demo data | Create admin account |
 | RefreshDatabase | Reset database | Feature testing | Clean database before every test |
 | Transactions | Rollback changes | Small database operations | Model testing |
-| Assertions | Verify database state | Check stored data | Verify user exists |
 
