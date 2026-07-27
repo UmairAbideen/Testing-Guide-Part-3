@@ -14,9 +14,7 @@ Database testing is useful when:
 
 - You want to verify database operations automatically.
 - You want realistic test data.
-- You want clean databases for every test.
 - You want to test models and relationships.
-- You want safer application changes.
 
 Common examples:
 
