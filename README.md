@@ -27,37 +27,6 @@ Common examples:
 
 ---
 
-## Without Database Testing
-
-```
-Code Change
-      │
-      ▼
-Manual Database Checking
-      │
-      ▼
-Possible Human Error
-```
-
----
-
-## With Database Testing
-
-```
-Code Change
-      │
-      ▼
-Automated Database Test
-      │
-      ▼
-Database Verification
-      │
-      ▼
-PASS / FAIL
-```
-
----
-
 # 🧩 Database Testing Concepts Covered
 
 ✅ Laravel Factories  
